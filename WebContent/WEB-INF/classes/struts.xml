@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.devMode" value="true" />
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="essayAction" class="cn.edu.nsu.action.EssayAction">
+			<result>essay.jsp</result>
+		</action>
+		<action name="loginAction" class="cn.edu.nsu.action.LoginAction">
+			<result>login.jsp</result>
+		</action>
+		<action name="registerAction" class="cn.edu.nsu.action.RegisterAction">
+			<result>register.jsp</result>
+		</action>
+		<action name="essayListAction" class="cn.edu.nsu.action.EssayListAction">
+			<result name="TYPELIST">essayList.jsp</result>
+			<result name="LUNBOTU">tu.jsp</result>
+			<result name="RANDOMLIST">randomlist.jsp</result>
+			<result name="ERROR">error.jsp</result>
+		</action>
+	</package>
+</struts>

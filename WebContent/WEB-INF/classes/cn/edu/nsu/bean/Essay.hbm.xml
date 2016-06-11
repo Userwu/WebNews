@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.edu.nsu.bean">
+	<class name="Essay" table="essay">
+		<id name="id" column="id">
+		</id>
+		<property name="ac" column="ac"/>
+		<property name="title" column="title"/>
+		<property name="author" column="author"/>
+		<property name="time" column="time"/>
+		<property name="content" column="content"/>
+		<property name="tag" column="tag"/>
+		<property name="type1" column="type1"/>
+	</class>
+</hibernate-mapping>
